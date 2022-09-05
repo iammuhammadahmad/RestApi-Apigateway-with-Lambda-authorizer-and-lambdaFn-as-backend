@@ -1,0 +1,637 @@
+{
+  "version": "20.0.0",
+  "artifacts": {
+    "Tree": {
+      "type": "cdk:tree",
+      "properties": {
+        "file": "tree.json"
+      }
+    },
+    "RestApiStack": {
+      "type": "aws:cloudformation:stack",
+      "environment": "aws://unknown-account/unknown-region",
+      "properties": {
+        "templateFile": "RestApiStack.template.json",
+        "validateOnSynth": false
+      },
+      "metadata": {
+        "/RestApiStack": [
+          {
+            "type": "aws:cdk:asset",
+            "data": {
+              "path": "asset.f72374fcdd004395af10e9ea5859c6590c0e57bcfcfb0267516d144b0075d0d8",
+              "id": "f72374fcdd004395af10e9ea5859c6590c0e57bcfcfb0267516d144b0075d0d8",
+              "packaging": "zip",
+              "sourceHash": "f72374fcdd004395af10e9ea5859c6590c0e57bcfcfb0267516d144b0075d0d8",
+              "s3BucketParameter": "AssetParametersf72374fcdd004395af10e9ea5859c6590c0e57bcfcfb0267516d144b0075d0d8S3BucketC251F426",
+              "s3KeyParameter": "AssetParametersf72374fcdd004395af10e9ea5859c6590c0e57bcfcfb0267516d144b0075d0d8S3VersionKeyA84434E3",
+              "artifactHashParameter": "AssetParametersf72374fcdd004395af10e9ea5859c6590c0e57bcfcfb0267516d144b0075d0d8ArtifactHashC90A66AB"
+            },
+            "trace": [
+              "ConstructNode.addMetadata (/tmp/jsii-kernel-0Jr251/node_modules/@aws-cdk/core/lib/construct-compat.js:416:62)",
+              "LegacyStackSynthesizer.doAddFileAsset (/tmp/jsii-kernel-0Jr251/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.js:202:29)",
+              "LegacyStackSynthesizer.addFileAsset (/tmp/jsii-kernel-0Jr251/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.js:98:25)",
+              "Stack.addFileAsset (/tmp/jsii-kernel-0Jr251/node_modules/@aws-cdk/core/lib/stack.js:473:33)",
+              "/tmp/jsii-kernel-0Jr251/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.js:103:59",
+              "withoutDeprecationWarnings (/tmp/jsii-kernel-0Jr251/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.js:229:16)",
+              "LegacyStackSynthesizer.addFileAsset (/tmp/jsii-kernel-0Jr251/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.js:103:20)",
+              "new Asset (/tmp/jsii-kernel-0Jr251/node_modules/@aws-cdk/aws-s3-assets/lib/asset.js:46:44)",
+              "AssetCode.bind (/tmp/jsii-kernel-0Jr251/node_modules/@aws-cdk/aws-lambda/lib/code.js:277:26)",
+              "new Function (/tmp/jsii-kernel-0Jr251/node_modules/@aws-cdk/aws-lambda/lib/function.js:114:33)",
+              "exports.Kernel._create (/tmp/tmp37o13qnx/lib/program.js:5592:179)",
+              "exports.Kernel.create (/tmp/tmp37o13qnx/lib/program.js:5400:29)",
+              "exports.KernelHost.processRequest (/tmp/tmp37o13qnx/lib/program.js:6618:36)",
+              "exports.KernelHost.run (/tmp/tmp37o13qnx/lib/program.js:6592:48)",
+              "Immediate._onImmediate (/tmp/tmp37o13qnx/lib/program.js:6593:46)",
+              "processImmediate (node:internal/timers:466:21)"
+            ]
+          },
+          {
+            "type": "aws:cdk:asset",
+            "data": {
+              "path": "asset.472449260be7bf563414efad402f47ec18db04969a664f8a09b8800e77595171",
+              "id": "472449260be7bf563414efad402f47ec18db04969a664f8a09b8800e77595171",
+              "packaging": "zip",
+              "sourceHash": "472449260be7bf563414efad402f47ec18db04969a664f8a09b8800e77595171",
+              "s3BucketParameter": "AssetParameters472449260be7bf563414efad402f47ec18db04969a664f8a09b8800e77595171S3BucketDC49448C",
+              "s3KeyParameter": "AssetParameters472449260be7bf563414efad402f47ec18db04969a664f8a09b8800e77595171S3VersionKeyD9ECABA7",
+              "artifactHashParameter": "AssetParameters472449260be7bf563414efad402f47ec18db04969a664f8a09b8800e77595171ArtifactHash9B31B299"
+            },
+            "trace": [
+              "ConstructNode.addMetadata (/tmp/jsii-kernel-0Jr251/node_modules/@aws-cdk/core/lib/construct-compat.js:416:62)",
+              "LegacyStackSynthesizer.doAddFileAsset (/tmp/jsii-kernel-0Jr251/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.js:202:29)",
+              "LegacyStackSynthesizer.addFileAsset (/tmp/jsii-kernel-0Jr251/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.js:98:25)",
+              "Stack.addFileAsset (/tmp/jsii-kernel-0Jr251/node_modules/@aws-cdk/core/lib/stack.js:473:33)",
+              "/tmp/jsii-kernel-0Jr251/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.js:103:59",
+              "withoutDeprecationWarnings (/tmp/jsii-kernel-0Jr251/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.js:229:16)",
+              "LegacyStackSynthesizer.addFileAsset (/tmp/jsii-kernel-0Jr251/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.js:103:20)",
+              "new Asset (/tmp/jsii-kernel-0Jr251/node_modules/@aws-cdk/aws-s3-assets/lib/asset.js:46:44)",
+              "AssetCode.bind (/tmp/jsii-kernel-0Jr251/node_modules/@aws-cdk/aws-lambda/lib/code.js:277:26)",
+              "new Function (/tmp/jsii-kernel-0Jr251/node_modules/@aws-cdk/aws-lambda/lib/function.js:114:33)",
+              "exports.Kernel._create (/tmp/tmp37o13qnx/lib/program.js:5592:179)",
+              "exports.Kernel.create (/tmp/tmp37o13qnx/lib/program.js:5400:29)",
+              "exports.KernelHost.processRequest (/tmp/tmp37o13qnx/lib/program.js:6618:36)",
+              "exports.KernelHost.run (/tmp/tmp37o13qnx/lib/program.js:6592:48)",
+              "Immediate._onImmediate (/tmp/tmp37o13qnx/lib/program.js:6593:46)",
+              "processImmediate (node:internal/timers:466:21)"
+            ]
+          }
+        ],
+        "/RestApiStack/BackendLambdaFunction/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "BackendLambdaFunctionServiceRole11F82449",
+            "trace": [
+              "new Role (/tmp/jsii-kernel-0Jr251/node_modules/@aws-cdk/aws-iam/lib/role.js:63:22)",
+              "new Function (/tmp/jsii-kernel-0Jr251/node_modules/@aws-cdk/aws-lambda/lib/function.js:97:35)",
+              "exports.Kernel._create (/tmp/tmp37o13qnx/lib/program.js:5592:179)",
+              "exports.Kernel.create (/tmp/tmp37o13qnx/lib/program.js:5400:29)",
+              "exports.KernelHost.processRequest (/tmp/tmp37o13qnx/lib/program.js:6618:36)",
+              "exports.KernelHost.run (/tmp/tmp37o13qnx/lib/program.js:6592:48)",
+              "Immediate._onImmediate (/tmp/tmp37o13qnx/lib/program.js:6593:46)",
+              "processImmediate (node:internal/timers:466:21)"
+            ]
+          }
+        ],
+        "/RestApiStack/BackendLambdaFunction/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "BackendLambdaFunction15282C80",
+            "trace": [
+              "new Function (/tmp/jsii-kernel-0Jr251/node_modules/@aws-cdk/aws-lambda/lib/function.js:172:26)",
+              "exports.Kernel._create (/tmp/tmp37o13qnx/lib/program.js:5592:179)",
+              "exports.Kernel.create (/tmp/tmp37o13qnx/lib/program.js:5400:29)",
+              "exports.KernelHost.processRequest (/tmp/tmp37o13qnx/lib/program.js:6618:36)",
+              "exports.KernelHost.run (/tmp/tmp37o13qnx/lib/program.js:6592:48)",
+              "Immediate._onImmediate (/tmp/tmp37o13qnx/lib/program.js:6593:46)",
+              "processImmediate (node:internal/timers:466:21)"
+            ]
+          }
+        ],
+        "/RestApiStack/AssetParameters/f72374fcdd004395af10e9ea5859c6590c0e57bcfcfb0267516d144b0075d0d8/S3Bucket": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParametersf72374fcdd004395af10e9ea5859c6590c0e57bcfcfb0267516d144b0075d0d8S3BucketC251F426",
+            "trace": [
+              "new FileAssetParameters (/tmp/jsii-kernel-0Jr251/node_modules/@aws-cdk/core/lib/private/asset-parameters.js:12:36)",
+              "LegacyStackSynthesizer.doAddFileAsset (/tmp/jsii-kernel-0Jr251/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.js:189:22)",
+              "LegacyStackSynthesizer.addFileAsset (/tmp/jsii-kernel-0Jr251/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.js:98:25)",
+              "Stack.addFileAsset (/tmp/jsii-kernel-0Jr251/node_modules/@aws-cdk/core/lib/stack.js:473:33)",
+              "/tmp/jsii-kernel-0Jr251/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.js:103:59",
+              "withoutDeprecationWarnings (/tmp/jsii-kernel-0Jr251/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.js:229:16)",
+              "LegacyStackSynthesizer.addFileAsset (/tmp/jsii-kernel-0Jr251/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.js:103:20)",
+              "new Asset (/tmp/jsii-kernel-0Jr251/node_modules/@aws-cdk/aws-s3-assets/lib/asset.js:46:44)",
+              "AssetCode.bind (/tmp/jsii-kernel-0Jr251/node_modules/@aws-cdk/aws-lambda/lib/code.js:277:26)",
+              "new Function (/tmp/jsii-kernel-0Jr251/node_modules/@aws-cdk/aws-lambda/lib/function.js:114:33)",
+              "exports.Kernel._create (/tmp/tmp37o13qnx/lib/program.js:5592:179)",
+              "exports.Kernel.create (/tmp/tmp37o13qnx/lib/program.js:5400:29)",
+              "exports.KernelHost.processRequest (/tmp/tmp37o13qnx/lib/program.js:6618:36)",
+              "exports.KernelHost.run (/tmp/tmp37o13qnx/lib/program.js:6592:48)",
+              "Immediate._onImmediate (/tmp/tmp37o13qnx/lib/program.js:6593:46)",
+              "processImmediate (node:internal/timers:466:21)"
+            ]
+          }
+        ],
+        "/RestApiStack/AssetParameters/f72374fcdd004395af10e9ea5859c6590c0e57bcfcfb0267516d144b0075d0d8/S3VersionKey": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParametersf72374fcdd004395af10e9ea5859c6590c0e57bcfcfb0267516d144b0075d0d8S3VersionKeyA84434E3",
+            "trace": [
+              "new FileAssetParameters (/tmp/jsii-kernel-0Jr251/node_modules/@aws-cdk/core/lib/private/asset-parameters.js:16:35)",
+              "LegacyStackSynthesizer.doAddFileAsset (/tmp/jsii-kernel-0Jr251/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.js:189:22)",
+              "LegacyStackSynthesizer.addFileAsset (/tmp/jsii-kernel-0Jr251/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.js:98:25)",
+              "Stack.addFileAsset (/tmp/jsii-kernel-0Jr251/node_modules/@aws-cdk/core/lib/stack.js:473:33)",
+              "/tmp/jsii-kernel-0Jr251/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.js:103:59",
+              "withoutDeprecationWarnings (/tmp/jsii-kernel-0Jr251/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.js:229:16)",
+              "LegacyStackSynthesizer.addFileAsset (/tmp/jsii-kernel-0Jr251/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.js:103:20)",
+              "new Asset (/tmp/jsii-kernel-0Jr251/node_modules/@aws-cdk/aws-s3-assets/lib/asset.js:46:44)",
+              "AssetCode.bind (/tmp/jsii-kernel-0Jr251/node_modules/@aws-cdk/aws-lambda/lib/code.js:277:26)",
+              "new Function (/tmp/jsii-kernel-0Jr251/node_modules/@aws-cdk/aws-lambda/lib/function.js:114:33)",
+              "exports.Kernel._create (/tmp/tmp37o13qnx/lib/program.js:5592:179)",
+              "exports.Kernel.create (/tmp/tmp37o13qnx/lib/program.js:5400:29)",
+              "exports.KernelHost.processRequest (/tmp/tmp37o13qnx/lib/program.js:6618:36)",
+              "exports.KernelHost.run (/tmp/tmp37o13qnx/lib/program.js:6592:48)",
+              "Immediate._onImmediate (/tmp/tmp37o13qnx/lib/program.js:6593:46)",
+              "processImmediate (node:internal/timers:466:21)"
+            ]
+          }
+        ],
+        "/RestApiStack/AssetParameters/f72374fcdd004395af10e9ea5859c6590c0e57bcfcfb0267516d144b0075d0d8/ArtifactHash": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParametersf72374fcdd004395af10e9ea5859c6590c0e57bcfcfb0267516d144b0075d0d8ArtifactHashC90A66AB",
+            "trace": [
+              "new FileAssetParameters (/tmp/jsii-kernel-0Jr251/node_modules/@aws-cdk/core/lib/private/asset-parameters.js:20:38)",
+              "LegacyStackSynthesizer.doAddFileAsset (/tmp/jsii-kernel-0Jr251/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.js:189:22)",
+              "LegacyStackSynthesizer.addFileAsset (/tmp/jsii-kernel-0Jr251/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.js:98:25)",
+              "Stack.addFileAsset (/tmp/jsii-kernel-0Jr251/node_modules/@aws-cdk/core/lib/stack.js:473:33)",
+              "/tmp/jsii-kernel-0Jr251/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.js:103:59",
+              "withoutDeprecationWarnings (/tmp/jsii-kernel-0Jr251/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.js:229:16)",
+              "LegacyStackSynthesizer.addFileAsset (/tmp/jsii-kernel-0Jr251/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.js:103:20)",
+              "new Asset (/tmp/jsii-kernel-0Jr251/node_modules/@aws-cdk/aws-s3-assets/lib/asset.js:46:44)",
+              "AssetCode.bind (/tmp/jsii-kernel-0Jr251/node_modules/@aws-cdk/aws-lambda/lib/code.js:277:26)",
+              "new Function (/tmp/jsii-kernel-0Jr251/node_modules/@aws-cdk/aws-lambda/lib/function.js:114:33)",
+              "exports.Kernel._create (/tmp/tmp37o13qnx/lib/program.js:5592:179)",
+              "exports.Kernel.create (/tmp/tmp37o13qnx/lib/program.js:5400:29)",
+              "exports.KernelHost.processRequest (/tmp/tmp37o13qnx/lib/program.js:6618:36)",
+              "exports.KernelHost.run (/tmp/tmp37o13qnx/lib/program.js:6592:48)",
+              "Immediate._onImmediate (/tmp/tmp37o13qnx/lib/program.js:6593:46)",
+              "processImmediate (node:internal/timers:466:21)"
+            ]
+          }
+        ],
+        "/RestApiStack/AssetParameters/472449260be7bf563414efad402f47ec18db04969a664f8a09b8800e77595171/S3Bucket": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParameters472449260be7bf563414efad402f47ec18db04969a664f8a09b8800e77595171S3BucketDC49448C",
+            "trace": [
+              "new FileAssetParameters (/tmp/jsii-kernel-0Jr251/node_modules/@aws-cdk/core/lib/private/asset-parameters.js:12:36)",
+              "LegacyStackSynthesizer.doAddFileAsset (/tmp/jsii-kernel-0Jr251/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.js:189:22)",
+              "LegacyStackSynthesizer.addFileAsset (/tmp/jsii-kernel-0Jr251/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.js:98:25)",
+              "Stack.addFileAsset (/tmp/jsii-kernel-0Jr251/node_modules/@aws-cdk/core/lib/stack.js:473:33)",
+              "/tmp/jsii-kernel-0Jr251/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.js:103:59",
+              "withoutDeprecationWarnings (/tmp/jsii-kernel-0Jr251/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.js:229:16)",
+              "LegacyStackSynthesizer.addFileAsset (/tmp/jsii-kernel-0Jr251/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.js:103:20)",
+              "new Asset (/tmp/jsii-kernel-0Jr251/node_modules/@aws-cdk/aws-s3-assets/lib/asset.js:46:44)",
+              "AssetCode.bind (/tmp/jsii-kernel-0Jr251/node_modules/@aws-cdk/aws-lambda/lib/code.js:277:26)",
+              "new Function (/tmp/jsii-kernel-0Jr251/node_modules/@aws-cdk/aws-lambda/lib/function.js:114:33)",
+              "exports.Kernel._create (/tmp/tmp37o13qnx/lib/program.js:5592:179)",
+              "exports.Kernel.create (/tmp/tmp37o13qnx/lib/program.js:5400:29)",
+              "exports.KernelHost.processRequest (/tmp/tmp37o13qnx/lib/program.js:6618:36)",
+              "exports.KernelHost.run (/tmp/tmp37o13qnx/lib/program.js:6592:48)",
+              "Immediate._onImmediate (/tmp/tmp37o13qnx/lib/program.js:6593:46)",
+              "processImmediate (node:internal/timers:466:21)"
+            ]
+          }
+        ],
+        "/RestApiStack/AssetParameters/472449260be7bf563414efad402f47ec18db04969a664f8a09b8800e77595171/S3VersionKey": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParameters472449260be7bf563414efad402f47ec18db04969a664f8a09b8800e77595171S3VersionKeyD9ECABA7",
+            "trace": [
+              "new FileAssetParameters (/tmp/jsii-kernel-0Jr251/node_modules/@aws-cdk/core/lib/private/asset-parameters.js:16:35)",
+              "LegacyStackSynthesizer.doAddFileAsset (/tmp/jsii-kernel-0Jr251/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.js:189:22)",
+              "LegacyStackSynthesizer.addFileAsset (/tmp/jsii-kernel-0Jr251/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.js:98:25)",
+              "Stack.addFileAsset (/tmp/jsii-kernel-0Jr251/node_modules/@aws-cdk/core/lib/stack.js:473:33)",
+              "/tmp/jsii-kernel-0Jr251/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.js:103:59",
+              "withoutDeprecationWarnings (/tmp/jsii-kernel-0Jr251/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.js:229:16)",
+              "LegacyStackSynthesizer.addFileAsset (/tmp/jsii-kernel-0Jr251/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.js:103:20)",
+              "new Asset (/tmp/jsii-kernel-0Jr251/node_modules/@aws-cdk/aws-s3-assets/lib/asset.js:46:44)",
+              "AssetCode.bind (/tmp/jsii-kernel-0Jr251/node_modules/@aws-cdk/aws-lambda/lib/code.js:277:26)",
+              "new Function (/tmp/jsii-kernel-0Jr251/node_modules/@aws-cdk/aws-lambda/lib/function.js:114:33)",
+              "exports.Kernel._create (/tmp/tmp37o13qnx/lib/program.js:5592:179)",
+              "exports.Kernel.create (/tmp/tmp37o13qnx/lib/program.js:5400:29)",
+              "exports.KernelHost.processRequest (/tmp/tmp37o13qnx/lib/program.js:6618:36)",
+              "exports.KernelHost.run (/tmp/tmp37o13qnx/lib/program.js:6592:48)",
+              "Immediate._onImmediate (/tmp/tmp37o13qnx/lib/program.js:6593:46)",
+              "processImmediate (node:internal/timers:466:21)"
+            ]
+          }
+        ],
+        "/RestApiStack/AssetParameters/472449260be7bf563414efad402f47ec18db04969a664f8a09b8800e77595171/ArtifactHash": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParameters472449260be7bf563414efad402f47ec18db04969a664f8a09b8800e77595171ArtifactHash9B31B299",
+            "trace": [
+              "new FileAssetParameters (/tmp/jsii-kernel-0Jr251/node_modules/@aws-cdk/core/lib/private/asset-parameters.js:20:38)",
+              "LegacyStackSynthesizer.doAddFileAsset (/tmp/jsii-kernel-0Jr251/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.js:189:22)",
+              "LegacyStackSynthesizer.addFileAsset (/tmp/jsii-kernel-0Jr251/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.js:98:25)",
+              "Stack.addFileAsset (/tmp/jsii-kernel-0Jr251/node_modules/@aws-cdk/core/lib/stack.js:473:33)",
+              "/tmp/jsii-kernel-0Jr251/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.js:103:59",
+              "withoutDeprecationWarnings (/tmp/jsii-kernel-0Jr251/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.js:229:16)",
+              "LegacyStackSynthesizer.addFileAsset (/tmp/jsii-kernel-0Jr251/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.js:103:20)",
+              "new Asset (/tmp/jsii-kernel-0Jr251/node_modules/@aws-cdk/aws-s3-assets/lib/asset.js:46:44)",
+              "AssetCode.bind (/tmp/jsii-kernel-0Jr251/node_modules/@aws-cdk/aws-lambda/lib/code.js:277:26)",
+              "new Function (/tmp/jsii-kernel-0Jr251/node_modules/@aws-cdk/aws-lambda/lib/function.js:114:33)",
+              "exports.Kernel._create (/tmp/tmp37o13qnx/lib/program.js:5592:179)",
+              "exports.Kernel.create (/tmp/tmp37o13qnx/lib/program.js:5400:29)",
+              "exports.KernelHost.processRequest (/tmp/tmp37o13qnx/lib/program.js:6618:36)",
+              "exports.KernelHost.run (/tmp/tmp37o13qnx/lib/program.js:6592:48)",
+              "Immediate._onImmediate (/tmp/tmp37o13qnx/lib/program.js:6593:46)",
+              "processImmediate (node:internal/timers:466:21)"
+            ]
+          }
+        ],
+        "/RestApiStack/lambdaAuthorizerFn/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "lambdaAuthorizerFnServiceRoleC3D05363",
+            "trace": [
+              "new Role (/tmp/jsii-kernel-0Jr251/node_modules/@aws-cdk/aws-iam/lib/role.js:63:22)",
+              "new Function (/tmp/jsii-kernel-0Jr251/node_modules/@aws-cdk/aws-lambda/lib/function.js:97:35)",
+              "exports.Kernel._create (/tmp/tmp37o13qnx/lib/program.js:5592:179)",
+              "exports.Kernel.create (/tmp/tmp37o13qnx/lib/program.js:5400:29)",
+              "exports.KernelHost.processRequest (/tmp/tmp37o13qnx/lib/program.js:6618:36)",
+              "exports.KernelHost.run (/tmp/tmp37o13qnx/lib/program.js:6592:48)",
+              "Immediate._onImmediate (/tmp/tmp37o13qnx/lib/program.js:6593:46)",
+              "processImmediate (node:internal/timers:466:21)"
+            ]
+          }
+        ],
+        "/RestApiStack/lambdaAuthorizerFn/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "lambdaAuthorizerFnBE01999D",
+            "trace": [
+              "new Function (/tmp/jsii-kernel-0Jr251/node_modules/@aws-cdk/aws-lambda/lib/function.js:172:26)",
+              "exports.Kernel._create (/tmp/tmp37o13qnx/lib/program.js:5592:179)",
+              "exports.Kernel.create (/tmp/tmp37o13qnx/lib/program.js:5400:29)",
+              "exports.KernelHost.processRequest (/tmp/tmp37o13qnx/lib/program.js:6618:36)",
+              "exports.KernelHost.run (/tmp/tmp37o13qnx/lib/program.js:6592:48)",
+              "Immediate._onImmediate (/tmp/tmp37o13qnx/lib/program.js:6593:46)",
+              "processImmediate (node:internal/timers:466:21)"
+            ]
+          }
+        ],
+        "/RestApiStack/lambdaAuthorizerFn/RestApiStackmyAuthorizer1F38963C:Permissions": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "lambdaAuthorizerFnRestApiStackmyAuthorizer1F38963CPermissions498F1272",
+            "trace": [
+              "Function.addPermission (/tmp/jsii-kernel-0Jr251/node_modules/@aws-cdk/aws-lambda/lib/function-base.js:84:9)",
+              "TokenAuthorizer.setupPermissions (/tmp/jsii-kernel-0Jr251/node_modules/@aws-cdk/aws-apigateway/lib/authorizers/lambda.js:35:26)",
+              "new TokenAuthorizer (/tmp/jsii-kernel-0Jr251/node_modules/@aws-cdk/aws-apigateway/lib/authorizers/lambda.js:102:14)",
+              "exports.Kernel._create (/tmp/tmp37o13qnx/lib/program.js:5592:179)",
+              "exports.Kernel.create (/tmp/tmp37o13qnx/lib/program.js:5400:29)",
+              "exports.KernelHost.processRequest (/tmp/tmp37o13qnx/lib/program.js:6618:36)",
+              "exports.KernelHost.run (/tmp/tmp37o13qnx/lib/program.js:6592:48)",
+              "Immediate._onImmediate (/tmp/tmp37o13qnx/lib/program.js:6593:46)",
+              "processImmediate (node:internal/timers:466:21)"
+            ]
+          }
+        ],
+        "/RestApiStack/myAuthorizer/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "myAuthorizerCD809350",
+            "trace": [
+              "new TokenAuthorizer (/tmp/jsii-kernel-0Jr251/node_modules/@aws-cdk/aws-apigateway/lib/authorizers/lambda.js:86:26)",
+              "exports.Kernel._create (/tmp/tmp37o13qnx/lib/program.js:5592:179)",
+              "exports.Kernel.create (/tmp/tmp37o13qnx/lib/program.js:5400:29)",
+              "exports.KernelHost.processRequest (/tmp/tmp37o13qnx/lib/program.js:6618:36)",
+              "exports.KernelHost.run (/tmp/tmp37o13qnx/lib/program.js:6592:48)",
+              "Immediate._onImmediate (/tmp/tmp37o13qnx/lib/program.js:6593:46)",
+              "processImmediate (node:internal/timers:466:21)"
+            ]
+          }
+        ],
+        "/RestApiStack/RestApi/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "RestApi0C43BF4B",
+            "trace": [
+              "new RestApi (/tmp/jsii-kernel-0Jr251/node_modules/@aws-cdk/aws-apigateway/lib/restapi.js:446:26)",
+              "exports.Kernel._create (/tmp/tmp37o13qnx/lib/program.js:5592:179)",
+              "exports.Kernel.create (/tmp/tmp37o13qnx/lib/program.js:5400:29)",
+              "exports.KernelHost.processRequest (/tmp/tmp37o13qnx/lib/program.js:6618:36)",
+              "exports.KernelHost.run (/tmp/tmp37o13qnx/lib/program.js:6592:48)",
+              "Immediate._onImmediate (/tmp/tmp37o13qnx/lib/program.js:6593:46)",
+              "processImmediate (node:internal/timers:466:21)"
+            ]
+          }
+        ],
+        "/RestApiStack/RestApi/CloudWatchRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "RestApiCloudWatchRoleE3ED6605",
+            "trace": [
+              "new Role (/tmp/jsii-kernel-0Jr251/node_modules/@aws-cdk/aws-iam/lib/role.js:63:22)",
+              "RestApi._configureCloudWatchRole (/tmp/jsii-kernel-0Jr251/node_modules/@aws-cdk/aws-apigateway/lib/restapi.js:270:22)",
+              "new RestApi (/tmp/jsii-kernel-0Jr251/node_modules/@aws-cdk/aws-apigateway/lib/restapi.js:463:18)",
+              "exports.Kernel._create (/tmp/tmp37o13qnx/lib/program.js:5592:179)",
+              "exports.Kernel.create (/tmp/tmp37o13qnx/lib/program.js:5400:29)",
+              "exports.KernelHost.processRequest (/tmp/tmp37o13qnx/lib/program.js:6618:36)",
+              "exports.KernelHost.run (/tmp/tmp37o13qnx/lib/program.js:6592:48)",
+              "Immediate._onImmediate (/tmp/tmp37o13qnx/lib/program.js:6593:46)",
+              "processImmediate (node:internal/timers:466:21)"
+            ]
+          }
+        ],
+        "/RestApiStack/RestApi/Account": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "RestApiAccount7C83CF5A",
+            "trace": [
+              "RestApi._configureCloudWatchRole (/tmp/jsii-kernel-0Jr251/node_modules/@aws-cdk/aws-apigateway/lib/restapi.js:274:34)",
+              "new RestApi (/tmp/jsii-kernel-0Jr251/node_modules/@aws-cdk/aws-apigateway/lib/restapi.js:463:18)",
+              "exports.Kernel._create (/tmp/tmp37o13qnx/lib/program.js:5592:179)",
+              "exports.Kernel.create (/tmp/tmp37o13qnx/lib/program.js:5400:29)",
+              "exports.KernelHost.processRequest (/tmp/tmp37o13qnx/lib/program.js:6618:36)",
+              "exports.KernelHost.run (/tmp/tmp37o13qnx/lib/program.js:6592:48)",
+              "Immediate._onImmediate (/tmp/tmp37o13qnx/lib/program.js:6593:46)",
+              "processImmediate (node:internal/timers:466:21)"
+            ]
+          }
+        ],
+        "/RestApiStack/RestApi/Deployment/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "RestApiDeployment180EC50365bbea423ee5570397aa694dcc0ec44a",
+            "trace": [
+              "new Deployment (/tmp/jsii-kernel-0Jr251/node_modules/@aws-cdk/aws-apigateway/lib/deployment.js:53:25)",
+              "RestApi._configureDeployment (/tmp/jsii-kernel-0Jr251/node_modules/@aws-cdk/aws-apigateway/lib/restapi.js:317:38)",
+              "new RestApi (/tmp/jsii-kernel-0Jr251/node_modules/@aws-cdk/aws-apigateway/lib/restapi.js:465:14)",
+              "exports.Kernel._create (/tmp/tmp37o13qnx/lib/program.js:5592:179)",
+              "exports.Kernel.create (/tmp/tmp37o13qnx/lib/program.js:5400:29)",
+              "exports.KernelHost.processRequest (/tmp/tmp37o13qnx/lib/program.js:6618:36)",
+              "exports.KernelHost.run (/tmp/tmp37o13qnx/lib/program.js:6592:48)",
+              "Immediate._onImmediate (/tmp/tmp37o13qnx/lib/program.js:6593:46)",
+              "processImmediate (node:internal/timers:466:21)"
+            ]
+          }
+        ],
+        "/RestApiStack/RestApi/DeploymentStage.prod/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "RestApiDeploymentStageprod3855DE66",
+            "trace": [
+              "new Stage (/tmp/jsii-kernel-0Jr251/node_modules/@aws-cdk/aws-apigateway/lib/stage.js:63:26)",
+              "RestApi._configureDeployment (/tmp/jsii-kernel-0Jr251/node_modules/@aws-cdk/aws-apigateway/lib/restapi.js:325:36)",
+              "new RestApi (/tmp/jsii-kernel-0Jr251/node_modules/@aws-cdk/aws-apigateway/lib/restapi.js:465:14)",
+              "exports.Kernel._create (/tmp/tmp37o13qnx/lib/program.js:5592:179)",
+              "exports.Kernel.create (/tmp/tmp37o13qnx/lib/program.js:5400:29)",
+              "exports.KernelHost.processRequest (/tmp/tmp37o13qnx/lib/program.js:6618:36)",
+              "exports.KernelHost.run (/tmp/tmp37o13qnx/lib/program.js:6592:48)",
+              "Immediate._onImmediate (/tmp/tmp37o13qnx/lib/program.js:6593:46)",
+              "processImmediate (node:internal/timers:466:21)"
+            ]
+          }
+        ],
+        "/RestApiStack/RestApi/Endpoint": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "RestApiEndpoint0551178A",
+            "trace": [
+              "RestApi._configureDeployment (/tmp/jsii-kernel-0Jr251/node_modules/@aws-cdk/aws-apigateway/lib/restapi.js:329:13)",
+              "new RestApi (/tmp/jsii-kernel-0Jr251/node_modules/@aws-cdk/aws-apigateway/lib/restapi.js:465:14)",
+              "exports.Kernel._create (/tmp/tmp37o13qnx/lib/program.js:5592:179)",
+              "exports.Kernel.create (/tmp/tmp37o13qnx/lib/program.js:5400:29)",
+              "exports.KernelHost.processRequest (/tmp/tmp37o13qnx/lib/program.js:6618:36)",
+              "exports.KernelHost.run (/tmp/tmp37o13qnx/lib/program.js:6592:48)",
+              "Immediate._onImmediate (/tmp/tmp37o13qnx/lib/program.js:6593:46)",
+              "processImmediate (node:internal/timers:466:21)"
+            ]
+          }
+        ],
+        "/RestApiStack/RestApi/Default/user/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "RestApiuser043FE7E4",
+            "trace": [
+              "new Resource (/tmp/jsii-kernel-0Jr251/node_modules/@aws-cdk/aws-apigateway/lib/resource.js:234:26)",
+              "RootResource.addResource (/tmp/jsii-kernel-0Jr251/node_modules/@aws-cdk/aws-apigateway/lib/resource.js:27:16)",
+              "/tmp/tmp37o13qnx/lib/program.js:5453:144",
+              "exports.Kernel._ensureSync (/tmp/tmp37o13qnx/lib/program.js:5871:28)",
+              "exports.Kernel.invoke (/tmp/tmp37o13qnx/lib/program.js:5453:73)",
+              "exports.KernelHost.processRequest (/tmp/tmp37o13qnx/lib/program.js:6618:36)",
+              "exports.KernelHost.run (/tmp/tmp37o13qnx/lib/program.js:6592:48)",
+              "Immediate._onImmediate (/tmp/tmp37o13qnx/lib/program.js:6593:46)",
+              "processImmediate (node:internal/timers:466:21)"
+            ]
+          }
+        ],
+        "/RestApiStack/RestApi/Default/user/{value}/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "RestApiuservalue0E73F71C",
+            "trace": [
+              "new Resource (/tmp/jsii-kernel-0Jr251/node_modules/@aws-cdk/aws-apigateway/lib/resource.js:234:26)",
+              "Resource.addResource (/tmp/jsii-kernel-0Jr251/node_modules/@aws-cdk/aws-apigateway/lib/resource.js:27:16)",
+              "/tmp/tmp37o13qnx/lib/program.js:5453:144",
+              "exports.Kernel._ensureSync (/tmp/tmp37o13qnx/lib/program.js:5871:28)",
+              "exports.Kernel.invoke (/tmp/tmp37o13qnx/lib/program.js:5453:73)",
+              "exports.KernelHost.processRequest (/tmp/tmp37o13qnx/lib/program.js:6618:36)",
+              "exports.KernelHost.run (/tmp/tmp37o13qnx/lib/program.js:6592:48)",
+              "Immediate._onImmediate (/tmp/tmp37o13qnx/lib/program.js:6593:46)",
+              "processImmediate (node:internal/timers:466:21)"
+            ]
+          }
+        ],
+        "/RestApiStack/RestApi/Default/user/{value}/GET/ApiPermission.RestApiStackRestApiD499FF26.GET..user.{value}": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "RestApiuservalueGETApiPermissionRestApiStackRestApiD499FF26GETuservalue360ABF84",
+            "trace": [
+              "Function.addPermission (/tmp/jsii-kernel-0Jr251/node_modules/@aws-cdk/aws-lambda/lib/function-base.js:84:9)",
+              "LambdaIntegration.bind (/tmp/jsii-kernel-0Jr251/node_modules/@aws-cdk/aws-apigateway/lib/integrations/lambda.js:55:22)",
+              "new Method (/tmp/jsii-kernel-0Jr251/node_modules/@aws-cdk/aws-apigateway/lib/method.js:45:40)",
+              "Resource.addMethod (/tmp/jsii-kernel-0Jr251/node_modules/@aws-cdk/aws-apigateway/lib/resource.js:40:16)",
+              "/tmp/tmp37o13qnx/lib/program.js:5453:144",
+              "exports.Kernel._ensureSync (/tmp/tmp37o13qnx/lib/program.js:5871:28)",
+              "exports.Kernel.invoke (/tmp/tmp37o13qnx/lib/program.js:5453:73)",
+              "exports.KernelHost.processRequest (/tmp/tmp37o13qnx/lib/program.js:6618:36)",
+              "exports.KernelHost.run (/tmp/tmp37o13qnx/lib/program.js:6592:48)",
+              "Immediate._onImmediate (/tmp/tmp37o13qnx/lib/program.js:6593:46)",
+              "processImmediate (node:internal/timers:466:21)"
+            ]
+          }
+        ],
+        "/RestApiStack/RestApi/Default/user/{value}/GET/ApiPermission.Test.RestApiStackRestApiD499FF26.GET..user.{value}": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "RestApiuservalueGETApiPermissionTestRestApiStackRestApiD499FF26GETuservalueC5286911",
+            "trace": [
+              "Function.addPermission (/tmp/jsii-kernel-0Jr251/node_modules/@aws-cdk/aws-lambda/lib/function-base.js:84:9)",
+              "LambdaIntegration.bind (/tmp/jsii-kernel-0Jr251/node_modules/@aws-cdk/aws-apigateway/lib/integrations/lambda.js:62:26)",
+              "new Method (/tmp/jsii-kernel-0Jr251/node_modules/@aws-cdk/aws-apigateway/lib/method.js:45:40)",
+              "Resource.addMethod (/tmp/jsii-kernel-0Jr251/node_modules/@aws-cdk/aws-apigateway/lib/resource.js:40:16)",
+              "/tmp/tmp37o13qnx/lib/program.js:5453:144",
+              "exports.Kernel._ensureSync (/tmp/tmp37o13qnx/lib/program.js:5871:28)",
+              "exports.Kernel.invoke (/tmp/tmp37o13qnx/lib/program.js:5453:73)",
+              "exports.KernelHost.processRequest (/tmp/tmp37o13qnx/lib/program.js:6618:36)",
+              "exports.KernelHost.run (/tmp/tmp37o13qnx/lib/program.js:6592:48)",
+              "Immediate._onImmediate (/tmp/tmp37o13qnx/lib/program.js:6593:46)",
+              "processImmediate (node:internal/timers:466:21)"
+            ]
+          }
+        ],
+        "/RestApiStack/RestApi/Default/user/{value}/GET/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "RestApiuservalueGETEE4C4142",
+            "trace": [
+              "new Method (/tmp/jsii-kernel-0Jr251/node_modules/@aws-cdk/aws-apigateway/lib/method.js:61:26)",
+              "Resource.addMethod (/tmp/jsii-kernel-0Jr251/node_modules/@aws-cdk/aws-apigateway/lib/resource.js:40:16)",
+              "/tmp/tmp37o13qnx/lib/program.js:5453:144",
+              "exports.Kernel._ensureSync (/tmp/tmp37o13qnx/lib/program.js:5871:28)",
+              "exports.Kernel.invoke (/tmp/tmp37o13qnx/lib/program.js:5453:73)",
+              "exports.KernelHost.processRequest (/tmp/tmp37o13qnx/lib/program.js:6618:36)",
+              "exports.KernelHost.run (/tmp/tmp37o13qnx/lib/program.js:6592:48)",
+              "Immediate._onImmediate (/tmp/tmp37o13qnx/lib/program.js:6593:46)",
+              "processImmediate (node:internal/timers:466:21)"
+            ]
+          }
+        ],
+        "/RestApiStack/RestApi/Default/user/POST/ApiPermission.RestApiStackRestApiD499FF26.POST..user": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "RestApiuserPOSTApiPermissionRestApiStackRestApiD499FF26POSTuserDC25C35B",
+            "trace": [
+              "Function.addPermission (/tmp/jsii-kernel-0Jr251/node_modules/@aws-cdk/aws-lambda/lib/function-base.js:84:9)",
+              "LambdaIntegration.bind (/tmp/jsii-kernel-0Jr251/node_modules/@aws-cdk/aws-apigateway/lib/integrations/lambda.js:55:22)",
+              "new Method (/tmp/jsii-kernel-0Jr251/node_modules/@aws-cdk/aws-apigateway/lib/method.js:45:40)",
+              "Resource.addMethod (/tmp/jsii-kernel-0Jr251/node_modules/@aws-cdk/aws-apigateway/lib/resource.js:40:16)",
+              "/tmp/tmp37o13qnx/lib/program.js:5453:144",
+              "exports.Kernel._ensureSync (/tmp/tmp37o13qnx/lib/program.js:5871:28)",
+              "exports.Kernel.invoke (/tmp/tmp37o13qnx/lib/program.js:5453:73)",
+              "exports.KernelHost.processRequest (/tmp/tmp37o13qnx/lib/program.js:6618:36)",
+              "exports.KernelHost.run (/tmp/tmp37o13qnx/lib/program.js:6592:48)",
+              "Immediate._onImmediate (/tmp/tmp37o13qnx/lib/program.js:6593:46)",
+              "processImmediate (node:internal/timers:466:21)"
+            ]
+          }
+        ],
+        "/RestApiStack/RestApi/Default/user/POST/ApiPermission.Test.RestApiStackRestApiD499FF26.POST..user": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "RestApiuserPOSTApiPermissionTestRestApiStackRestApiD499FF26POSTuserC44F8977",
+            "trace": [
+              "Function.addPermission (/tmp/jsii-kernel-0Jr251/node_modules/@aws-cdk/aws-lambda/lib/function-base.js:84:9)",
+              "LambdaIntegration.bind (/tmp/jsii-kernel-0Jr251/node_modules/@aws-cdk/aws-apigateway/lib/integrations/lambda.js:62:26)",
+              "new Method (/tmp/jsii-kernel-0Jr251/node_modules/@aws-cdk/aws-apigateway/lib/method.js:45:40)",
+              "Resource.addMethod (/tmp/jsii-kernel-0Jr251/node_modules/@aws-cdk/aws-apigateway/lib/resource.js:40:16)",
+              "/tmp/tmp37o13qnx/lib/program.js:5453:144",
+              "exports.Kernel._ensureSync (/tmp/tmp37o13qnx/lib/program.js:5871:28)",
+              "exports.Kernel.invoke (/tmp/tmp37o13qnx/lib/program.js:5453:73)",
+              "exports.KernelHost.processRequest (/tmp/tmp37o13qnx/lib/program.js:6618:36)",
+              "exports.KernelHost.run (/tmp/tmp37o13qnx/lib/program.js:6592:48)",
+              "Immediate._onImmediate (/tmp/tmp37o13qnx/lib/program.js:6593:46)",
+              "processImmediate (node:internal/timers:466:21)"
+            ]
+          }
+        ],
+        "/RestApiStack/RestApi/Default/user/POST/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "RestApiuserPOSTB13CE763",
+            "trace": [
+              "new Method (/tmp/jsii-kernel-0Jr251/node_modules/@aws-cdk/aws-apigateway/lib/method.js:61:26)",
+              "Resource.addMethod (/tmp/jsii-kernel-0Jr251/node_modules/@aws-cdk/aws-apigateway/lib/resource.js:40:16)",
+              "/tmp/tmp37o13qnx/lib/program.js:5453:144",
+              "exports.Kernel._ensureSync (/tmp/tmp37o13qnx/lib/program.js:5871:28)",
+              "exports.Kernel.invoke (/tmp/tmp37o13qnx/lib/program.js:5453:73)",
+              "exports.KernelHost.processRequest (/tmp/tmp37o13qnx/lib/program.js:6618:36)",
+              "exports.KernelHost.run (/tmp/tmp37o13qnx/lib/program.js:6592:48)",
+              "Immediate._onImmediate (/tmp/tmp37o13qnx/lib/program.js:6593:46)",
+              "processImmediate (node:internal/timers:466:21)"
+            ]
+          }
+        ],
+        "/RestApiStack/QueryPathValidator/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "QueryPathValidatorA4133F60",
+            "trace": [
+              "new RequestValidator (/tmp/jsii-kernel-0Jr251/node_modules/@aws-cdk/aws-apigateway/lib/requestvalidator.js:30:26)",
+              "exports.Kernel._create (/tmp/tmp37o13qnx/lib/program.js:5592:179)",
+              "exports.Kernel.create (/tmp/tmp37o13qnx/lib/program.js:5400:29)",
+              "exports.KernelHost.processRequest (/tmp/tmp37o13qnx/lib/program.js:6618:36)",
+              "exports.KernelHost.run (/tmp/tmp37o13qnx/lib/program.js:6592:48)",
+              "Immediate._onImmediate (/tmp/tmp37o13qnx/lib/program.js:6593:46)",
+              "processImmediate (node:internal/timers:466:21)"
+            ]
+          }
+        ],
+        "/RestApiStack/APIURL": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "APIURL",
+            "trace": [
+              "exports.Kernel._create (/tmp/tmp37o13qnx/lib/program.js:5592:179)",
+              "exports.Kernel.create (/tmp/tmp37o13qnx/lib/program.js:5400:29)",
+              "exports.KernelHost.processRequest (/tmp/tmp37o13qnx/lib/program.js:6618:36)",
+              "exports.KernelHost.run (/tmp/tmp37o13qnx/lib/program.js:6592:48)",
+              "Immediate._onImmediate (/tmp/tmp37o13qnx/lib/program.js:6593:46)",
+              "processImmediate (node:internal/timers:466:21)"
+            ]
+          }
+        ],
+        "/RestApiStack/CDKMetadata/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadata",
+            "trace": [
+              "new MetadataResource (/tmp/jsii-kernel-0Jr251/node_modules/@aws-cdk/core/lib/private/metadata-resource.js:22:30)",
+              "/tmp/jsii-kernel-0Jr251/node_modules/@aws-cdk/core/lib/private/synthesis.js:139:9",
+              "visit (/tmp/jsii-kernel-0Jr251/node_modules/@aws-cdk/core/lib/private/synthesis.js:200:9)",
+              "visit (/tmp/jsii-kernel-0Jr251/node_modules/@aws-cdk/core/lib/private/synthesis.js:197:9)",
+              "injectMetadataResources (/tmp/jsii-kernel-0Jr251/node_modules/@aws-cdk/core/lib/private/synthesis.js:128:5)",
+              "Object.synthesize (/tmp/jsii-kernel-0Jr251/node_modules/@aws-cdk/core/lib/private/synthesis.js:17:5)",
+              "App.synth (/tmp/jsii-kernel-0Jr251/node_modules/@aws-cdk/core/lib/stage.js:104:41)",
+              "/tmp/tmp37o13qnx/lib/program.js:5453:144",
+              "exports.Kernel._ensureSync (/tmp/tmp37o13qnx/lib/program.js:5871:28)",
+              "exports.Kernel.invoke (/tmp/tmp37o13qnx/lib/program.js:5453:73)",
+              "exports.KernelHost.processRequest (/tmp/tmp37o13qnx/lib/program.js:6618:36)",
+              "exports.KernelHost.run (/tmp/tmp37o13qnx/lib/program.js:6592:48)",
+              "Immediate._onImmediate (/tmp/tmp37o13qnx/lib/program.js:6593:46)",
+              "processImmediate (node:internal/timers:466:21)"
+            ]
+          }
+        ],
+        "/RestApiStack/CDKMetadata/Condition": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadataAvailable",
+            "trace": [
+              "new MetadataResource (/tmp/jsii-kernel-0Jr251/node_modules/@aws-cdk/core/lib/private/metadata-resource.js:30:35)",
+              "/tmp/jsii-kernel-0Jr251/node_modules/@aws-cdk/core/lib/private/synthesis.js:139:9",
+              "visit (/tmp/jsii-kernel-0Jr251/node_modules/@aws-cdk/core/lib/private/synthesis.js:200:9)",
+              "visit (/tmp/jsii-kernel-0Jr251/node_modules/@aws-cdk/core/lib/private/synthesis.js:197:9)",
+              "injectMetadataResources (/tmp/jsii-kernel-0Jr251/node_modules/@aws-cdk/core/lib/private/synthesis.js:128:5)",
+              "Object.synthesize (/tmp/jsii-kernel-0Jr251/node_modules/@aws-cdk/core/lib/private/synthesis.js:17:5)",
+              "App.synth (/tmp/jsii-kernel-0Jr251/node_modules/@aws-cdk/core/lib/stage.js:104:41)",
+              "/tmp/tmp37o13qnx/lib/program.js:5453:144",
+              "exports.Kernel._ensureSync (/tmp/tmp37o13qnx/lib/program.js:5871:28)",
+              "exports.Kernel.invoke (/tmp/tmp37o13qnx/lib/program.js:5453:73)",
+              "exports.KernelHost.processRequest (/tmp/tmp37o13qnx/lib/program.js:6618:36)",
+              "exports.KernelHost.run (/tmp/tmp37o13qnx/lib/program.js:6592:48)",
+              "Immediate._onImmediate (/tmp/tmp37o13qnx/lib/program.js:6593:46)",
+              "processImmediate (node:internal/timers:466:21)"
+            ]
+          }
+        ]
+      },
+      "displayName": "RestApiStack"
+    }
+  }
+}
