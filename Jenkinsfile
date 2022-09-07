@@ -5,11 +5,10 @@ pipeline {
     AWS_CREDENTIALS=credentials('aws-credentials')
   }
   stages {
-    stage('Install dependencies') {
-      steps {
-          sh 'pip3 install -r requirements.txt'
-
-      }
+    stage('test cdk') {
+        steps{
+            sh 'cdk --version'
+        }
     }
     stage('CDK bootstrap') {
       steps {

@@ -10,3 +10,4 @@ RUN apk --no-cache add python3 py3-pip
 RUN npm i -g aws-cdk
 RUN cdk --version
 RUN pip3 --version
+RUN pip3 install -r requirements.txt
