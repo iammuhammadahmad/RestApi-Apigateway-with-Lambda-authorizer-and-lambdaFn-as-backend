@@ -1,12 +1,7 @@
 pipeline {
-  agent {
-    dockerfile {
-      filename 'Dockerfile'
-    }
-
-  }
+  agent {dockerfile true}
   environment {
-    AWS_DEFAULT_REGION="us-west-1",
+    AWS_DEFAULT_REGION="us-west-1"
     AWS_CREDENTIALS=credentials('aws-credentials')
   }
   stages {
